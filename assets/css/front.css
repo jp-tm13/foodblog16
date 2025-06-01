@@ -1,0 +1,131 @@
+/* GLOBAL RESET */
+/****************/
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+/* GENERAL SETTINGS */
+/********************/
+html {
+  /*
+    10px / 16px = 0.625 = 62.5%
+    => percentage of user's browser font-size setting to ensure 1 rem = 10px
+  */
+  font-size: 62.5%;
+
+  overflow-x: hidden;
+  /* does not work on safari */
+  /* scroll-behavior: smooth; */
+}
+
+/* HELPER/FUNCTIONALITY */
+/************************/
+.fblgst-align-items-c {
+  align-items: center !important;
+}
+
+.fblgst-overflow-hidden {
+  overflow: hidden;
+}
+
+/* HEADER */
+/**********/
+.wp-block-navigation-link a:hover,
+.wp-block-navigation-link a:active {
+  color: var(--wp--preset--color--fblgst-primary) !important;
+}
+
+.fblgstp-header-inner-group {
+  position: relative;
+}
+
+/* FEATURED IN */
+/***************/
+.fblgst-logo-featured img {
+  filter: brightness(0);
+  opacity: 65%;
+}
+
+/* NEWSLETTER */
+/**************/
+.fblgst-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.fblgst-form p .wpcf7-spinner {
+  display: none;
+}
+
+.fblgst-form-input-mail {
+  font-family: inherit;
+  font-size: var(--wp--preset--font-size--medium);
+  text-align: center;
+  color: inherit;
+  background-color: var(--wp--preset--color--fblgst-white);
+  border: 2px solid var(--wp--preset--color--fblgst-gray-1);
+  /* width: 50%; */
+  padding: 1.2rem 0;
+}
+
+.fblgst-form-submit-btn {
+  font-size: var(--wp--preset--font-size--medium);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1.2rem 2.4rem;
+  color: var(--wp--preset--color--fblgst-white);
+  background-color: var(--wp--preset--color--fblgst-primary);
+  border: none;
+  cursor: pointer;
+  justify-self: center;
+
+  transition: all 0.3s;
+}
+
+.fblgst-form-submit-btn:hover,
+.fblgst-form-submit-btn:active {
+  background-color: var(--wp--preset--color--fblgst-shade-1);
+}
+
+/* POSTS */
+/*********/
+.fblgst-post-author {
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  color: rgb(55 65 81);
+}
+.fblgst-post-author > *:first-child {
+  margin-right: 0.5rem;
+}
+.fblgst-post-author img {
+  margin-right: 0.5rem;
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: rgb(229 231 235);
+  padding: 0.125rem;
+}
+
+.fblgst-post-comment-count:before {
+  content: "\f24d";
+  margin-right: 0.25rem;
+  vertical-align: middle;
+}
+
+/* QUERIES */
+/***********/
+/* 725px */
+@media (max-width: 47em) {
+  .fblgst-is-nav-hidden {
+    display: none !important;
+  }
+}

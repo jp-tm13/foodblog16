@@ -1,0 +1,57 @@
+<!-- wp:template-part {"slug":"header","theme":"foodblog16"} /-->
+
+<!-- wp:group {"layout":{"type":"constrained","contentSize":"120rem"}} -->
+<div class="wp-block-group">
+  <!-- wp:foodblog16-plus/page-header {"showCategory":true} /-->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"constrained","contentSize":"120rem"}} -->
+<div class="wp-block-group">
+  <!-- wp:query {"queryId":11,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"format":[]},"metadata":{"categories":["posts"],"patternName":"core/query-standard-posts","name":"Standard"}} -->
+  <div class="wp-block-query">
+    <!-- wp:post-template {"style":{"spacing":{"margin":{"bottom":"4.4rem"}}}} -->
+    <!-- wp:columns {"style":{"spacing":{"margin":{"bottom":"2.4rem"}}}} -->
+    <div class="wp-block-columns" style="margin-bottom: 2.4rem">
+      <!-- wp:column {"width":"33.33%"} -->
+      <div class="wp-block-column" style="flex-basis: 33.33%">
+        <!-- wp:post-author {"avatarSize":24,"className":"fblgst-post-author","style":{"spacing":{"margin":{"bottom":"0.6rem"},"padding":{"top":"0px","right":"0px","bottom":"0px","left":"0px"}}}} /-->
+
+        <!-- wp:post-title {"isLink":true,"style":{"spacing":{"margin":{"top":"0px","bottom":"0.5rem"}}}} /-->
+
+        <!-- wp:post-date {"isLink":true,"style":{"spacing":{"margin":{"top":"0px"}}}} /-->
+      </div>
+      <!-- /wp:column -->
+
+      <!-- wp:column {"width":"66.66%"} -->
+      <div class="wp-block-column" style="flex-basis: 66.66%">
+        <!-- wp:post-featured-image {"isLink":true,"width":"100%","className":"fblgst-overflow-hidden","style":{"spacing":{"margin":{"bottom":"1rem"}}}} /-->
+
+        <!-- wp:group {"style":{"spacing":{"margin":{"top":"0px","bottom":"0px"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
+        <div class="wp-block-group" style="margin-top: 0px; margin-bottom: 0px">
+          <!-- wp:post-terms {"term":"post_tag"} /-->
+
+          <!-- wp:post-comments-count {"className":"bi fblgst-post-comment-count"} /-->
+        </div>
+        <!-- /wp:group -->
+
+        <!-- wp:post-excerpt /-->
+      </div>
+      <!-- /wp:column -->
+    </div>
+    <!-- /wp:columns -->
+    <!-- /wp:post-template -->
+
+    <!-- wp:query-pagination -->
+    <!-- wp:query-pagination-previous /-->
+
+    <!-- wp:query-pagination-numbers /-->
+
+    <!-- wp:query-pagination-next /-->
+    <!-- /wp:query-pagination -->
+  </div>
+  <!-- /wp:query -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"foodblog16","area":"uncategorized"} /-->
