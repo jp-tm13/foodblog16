@@ -31,6 +31,10 @@ html {
   overflow: hidden;
 }
 
+.fblgst-no-wrap {
+  white-space: nowrap !important;
+}
+
 /* HEADER */
 /**********/
 .wp-block-navigation-link a:hover,
@@ -44,9 +48,14 @@ html {
 
 /* FEATURED IN */
 /***************/
+.fblgst-logo-featured {
+  flex: 1;
+}
+
 .fblgst-logo-featured img {
   filter: brightness(0);
   opacity: 65%;
+  width: 100%;
 }
 
 /* NEWSLETTER */
@@ -127,5 +136,12 @@ html {
 @media (max-width: 47em) {
   .fblgst-is-nav-hidden {
     display: none !important;
+  }
+}
+
+/* 448px */
+@media (max-width: 28em) {
+  html {
+    font-size: 50%;
   }
 }
